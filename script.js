@@ -150,7 +150,57 @@ function checkLoginStatus() {
 }
 
 // Initialize login check
-document.addEventListener('DOMContentLoaded', checkLoginStatus);
+document.addEventListener('DOMContentLoaded', () => {
+  checkLoginStatus();
+  initCarousel();
+});
+
+function initCarousel() {
+  const carousel = document.querySelector('.carousel-items');
+  const items = document.querySelectorAll('.carousel-item');
+  let currentIndex = 0;
+
+  document.querySelector('.carousel-next')?.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % items.length;
+    updateCarousel();
+  });
+
+  document.querySelector('.carousel-prev')?.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + items.length) % items.length;
+    updateCarousel();
+  });
+
+  function updateCarousel() {
+    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+
+  // Auto-advance carousel
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % items.length;
+    updateCarousel();
+  }, 5000);
+}
+
+function playVideo(videoId) {
+  const modal = document.createElement('div');
+  modal.className = 'video-modal active';
+  modal.innerHTML = `
+    <span class="close-video" onclick="closeVideo()">&times;</span>
+    <iframe src="https://www.youtube.com/embed/${videoId}?autoplay=1" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
+  `;
+  document.body.appendChild(modal);
+}
+
+function closeVideo() {
+  const modal = document.querySelector('.video-modal');
+  if (modal) {
+    modal.remove();
+  }
+}
 
 // Emergency button
 document.getElementById('emergencyButton').addEventListener('click', function() {
