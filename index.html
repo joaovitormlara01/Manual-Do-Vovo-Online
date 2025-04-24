@@ -4,60 +4,64 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Manual do Vovô Online</title>
+  <title>Manual do Vovô Online - Segurança Digital</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Logo Manual do Vovô Online" class="logo">
-    <h1>Manual do Vovô Online</h1>
-    <p>Sua bússola na internet</p>
+    <nav>
+      <div class="logo-container">
+        <img src="logo.png" alt="Logo Manual do Vovô Online" class="logo">
+      </div>
+      <button class="login-btn">Login</button>
+    </nav>
   </header>
 
   <main>
-    <section class="objetivo-central">
-      <h2>🎯 Objetivo Central</h2>
-      <p>Capacitar idosos, de forma clara e acessível, a navegarem com segurança no ambiente digital, reconhecendo e evitando golpes virtuais.</p>
+    <section class="intro">
+      <h1>Manual do Vovô Online</h1>
+      <p>Seu guia completo para navegar com segurança na internet</p>
     </section>
 
-    <section class="topicos">
-      <h2>💡 Tópicos a Abordar</h2>
-      <ul>
-        <li>Como criar senhas seguras</li>
-        <li>Como identificar mensagens falsas</li>
-        <li>Cuidados com links e downloads</li>
-        <li>Evitando golpes em apps de mensagens e redes sociais</li>
-        <li>Reconhecendo falsas promoções e anúncios</li>
-      </ul>
-    </section>
-
-    <section class="formatos">
-      <h2>🎥 Formatos de Conteúdo</h2>
-      <div class="formato-cards">
+    <section class="golpes-section">
+      <h2>Como os Golpes Acontecem?</h2>
+      <div class="golpes-cards">
         <div class="card">
-          <h3>Vídeos Explicativos</h3>
-          <p>Curtos e objetivos</p>
+          <h3>🔒 Senhas Fracas</h3>
+          <p>Aprenda a criar senhas fortes e seguras</p>
         </div>
         <div class="card">
-          <h3>Jogos Educativos</h3>
-          <p>Interativos e divertidos</p>
+          <h3>📱 WhatsApp</h3>
+          <p>Evite golpes em aplicativos de mensagem</p>
         </div>
         <div class="card">
-          <h3>Aplicativo Amigável</h3>
-          <p>Fácil de usar</p>
+          <h3>💳 Banco Digital</h3>
+          <p>Proteja suas informações bancárias</p>
         </div>
       </div>
     </section>
 
-    <section class="redes-apoio">
-      <h2>👥 Redes de Apoio</h2>
-      <p>Netos, filhos e cuidadores como aliados digitais</p>
-      <button id="emergencyButton">Contatos Úteis em Caso de Golpe</button>
+    <section class="quiz-section">
+      <h2>Quizzes Educativos</h2>
+      <div class="quiz-container">
+        <button class="quiz-btn" onclick="startQuiz(1)">Quiz 1: Segurança Básica</button>
+        <button class="quiz-btn" onclick="startQuiz(2)">Quiz 2: Golpes Comuns</button>
+      </div>
+    </section>
+
+    <section class="cadastro">
+      <h2>Cadastre-se para Mais Dicas</h2>
+      <form id="cadastroForm" class="signup-form">
+        <input type="text" placeholder="Nome" required>
+        <input type="email" placeholder="E-mail" required>
+        <button type="submit">Cadastrar</button>
+      </form>
     </section>
   </main>
 
   <footer>
-    <p>Divulgue em grupos de WhatsApp de idosos e redes sociais</p>
+    <p>Manual do Vovô Online - Protegendo nossos idosos no mundo digital</p>
+    <button id="emergencyButton">Botão de Emergência</button>
   </footer>
 
   <script src="script.js"></script>

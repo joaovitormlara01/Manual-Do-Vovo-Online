@@ -1,12 +1,44 @@
 
+// Quiz questions
+const quizzes = {
+  1: [
+    {
+      question: "Qual é a primeira medida de segurança ao usar WhatsApp?",
+      options: [
+        "Ativar verificação em duas etapas",
+        "Compartilhar sua localização",
+        "Aceitar todos os convites de grupo",
+      ],
+      correct: 0
+    }
+  ],
+  2: [
+    {
+      question: "Como identificar um golpe bancário?",
+      options: [
+        "O banco pede sua senha por telefone",
+        "O banco envia link por SMS",
+        "O banco solicita atualização pelo app oficial",
+      ],
+      correct: 2
+    }
+  ]
+};
+
+function startQuiz(quizNumber) {
+  alert(`Quiz ${quizNumber} iniciado!\nEm desenvolvimento...`);
+}
+
+// Form handling
+document.getElementById('cadastroForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  alert('Cadastro recebido! Em breve você receberá nossas dicas de segurança.');
+});
+
+// Emergency button
 document.getElementById('emergencyButton').addEventListener('click', function() {
-  alert('Contatos Importantes:\n\n' +
+  alert('Contatos de Emergência:\n\n' +
         'Polícia: 190\n' +
-        'Procon: 151\n' +
-        'Delegacia do Idoso: Procure o número da sua cidade\n\n' +
-        'Em caso de golpe:\n' +
-        '1. Contate seu banco imediatamente\n' +
-        '2. Faça um boletim de ocorrência\n' +
-        '3. Avise seus familiares de confiança\n' +
-        '4. Não clique em mais nenhum link recebido');
+        'Delegacia Virtual: www.delegaciavirtual.gov.br\n' +
+        'Central de Atendimento ao Idoso: 0800-555-0123');
 });
