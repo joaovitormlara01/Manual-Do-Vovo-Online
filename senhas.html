@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Gerenciador de Senhas - Manual do Vovô Online</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo-container">
+        <img src="logo.png" alt="Logo Manual do Vovô Online" class="logo">
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Início</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="quizzes.html">Quizzes</a>
+        <a href="senhas.html" class="active">Senhas</a>
+        <a href="emergencia.html">Emergência</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="password-manager">
+      <h1>Gerenciador de Senhas</h1>
+      <div class="password-form">
+        <input type="text" id="siteName" placeholder="Nome do site" required>
+        <input type="text" id="username" placeholder="Seu usuário" required>
+        <input type="password" id="password" placeholder="Sua senha" required>
+        <button onclick="savePassword()">Salvar Senha</button>
+      </div>
+
+      <div class="saved-passwords">
+        <h2>Suas Senhas Salvas</h2>
+        <div id="passwordList"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Manual do Vovô Online - Protegendo nossos idosos no mundo digital</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

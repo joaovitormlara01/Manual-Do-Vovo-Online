@@ -285,8 +285,60 @@ footer {
   margin-top: 1rem;
 }
 
+.emergency-section {
+  padding: 2rem;
+}
+
+.emergency-contacts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.emergency-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.emergency-card .phone {
+  font-size: 2rem;
+  color: #f44336;
+  margin: 1rem 0;
+}
+
+.password-manager {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.password-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.scams-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.scam-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
 @media (max-width: 600px) {
-  .golpes-cards, .quiz-list, .noticias-grid {
+  .golpes-cards, .quiz-list, .noticias-grid, .emergency-contacts, .scams-grid {
     grid-template-columns: 1fr;
   }
   

@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Emergência - Manual do Vovô Online</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo-container">
+        <img src="logo.png" alt="Logo Manual do Vovô Online" class="logo">
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Início</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="quizzes.html">Quizzes</a>
+        <a href="senhas.html">Senhas</a>
+        <a href="emergencia.html" class="active">Emergência</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="emergency-section">
+      <h1>Central de Emergência</h1>
+      <div class="emergency-contacts">
+        <div class="emergency-card">
+          <h2>Polícia</h2>
+          <p class="phone">190</p>
+          <button onclick="call('190')">Ligar Agora</button>
+        </div>
+
+        <div class="emergency-card">
+          <h2>Delegacia Virtual</h2>
+          <a href="https://delegaciavirtual.gov.br" target="_blank" class="emergency-link">Acessar Delegacia Virtual</a>
+        </div>
+
+        <div class="emergency-card">
+          <h2>Central de Atendimento ao Idoso</h2>
+          <p class="phone">0800-555-0123</p>
+          <button onclick="call('08005550123')">Ligar Agora</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Manual do Vovô Online - Protegendo nossos idosos no mundo digital</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
