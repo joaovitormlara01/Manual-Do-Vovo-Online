@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Perfil - Manual do Vovô Online</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo-container">
+        <img src="logo.png" alt="Logo Manual do Vovô Online" class="logo">
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Início</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="quizzes.html">Quizzes</a>
+        <a href="perfil.html" class="active">Perfil</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="profile-section">
+      <h1>Meu Perfil</h1>
+      <div class="profile-info">
+        <h2 id="userEmail"></h2>
+      </div>
+
+      <section class="password-manager">
+        <h2>Gerenciador de Senhas</h2>
+        <div class="password-form">
+          <input type="text" id="siteName" placeholder="Nome do site" required>
+          <input type="text" id="username" placeholder="Seu usuário" required>
+          <input type="password" id="password" placeholder="Sua senha" required>
+          <button onclick="savePassword()">Salvar Senha</button>
+        </div>
+
+        <div class="saved-passwords">
+          <h3>Suas Senhas Salvas</h3>
+          <div id="passwordList"></div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>Manual do Vovô Online - Protegendo nossos idosos no mundo digital</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

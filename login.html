@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Login - Manual do Vovô Online</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo-container">
+        <img src="logo.png" alt="Logo Manual do Vovô Online" class="logo">
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Início</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="quizzes.html">Quizzes</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="login-section">
+      <h1>Login</h1>
+      <form class="login-form" onsubmit="return handleLogin(event)">
+        <input type="email" id="loginEmail" placeholder="Email" required>
+        <input type="password" id="loginPassword" placeholder="Senha" required>
+        <button type="submit">Entrar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Manual do Vovô Online - Protegendo nossos idosos no mundo digital</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

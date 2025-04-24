@@ -91,6 +91,39 @@ if (document.getElementById('passwordList')) {
   updatePasswordList();
 }
 
+// Login handling
+function handleLogin(event) {
+  event.preventDefault();
+  const email = document.getElementById('loginEmail').value;
+  const password = document.getElementById('loginPassword').value;
+  
+  // Simples simulação de login
+  localStorage.setItem('userEmail', email);
+  localStorage.setItem('isLoggedIn', 'true');
+  
+  window.location.href = 'perfil.html';
+  return false;
+}
+
+// Check login status
+function checkLoginStatus() {
+  const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+  const loginButton = document.getElementById('loginButton');
+  const userEmail = document.getElementById('userEmail');
+  
+  if (isLoggedIn && loginButton) {
+    loginButton.textContent = 'Perfil';
+    loginButton.href = 'perfil.html';
+  }
+  
+  if (userEmail) {
+    userEmail.textContent = localStorage.getItem('userEmail');
+  }
+}
+
+// Initialize login check
+document.addEventListener('DOMContentLoaded', checkLoginStatus);
+
 // Emergency button
 document.getElementById('emergencyButton').addEventListener('click', function() {
   alert('Contatos de Emergência:\n\n' +
