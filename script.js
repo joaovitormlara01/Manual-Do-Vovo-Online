@@ -72,9 +72,23 @@ function updatePasswordList() {
     <div class="password-item">
       <h3>${p.siteName}</h3>
       <p>Usuário: ${p.username}</p>
-      <p>Senha: ${'*'.repeat(p.password.length)}</p>
+      <p class="password-text">Senha: ${'*'.repeat(p.password.length)}</p>
+      <p class="password-real" style="display: none">Senha: ${p.password}</p>
     </div>
   `).join('');
+}
+
+function togglePasswordVisibility() {
+  const passwordTexts = document.querySelectorAll('.password-text');
+  const passwordReals = document.querySelectorAll('.password-real');
+  
+  passwordTexts.forEach(text => {
+    text.style.display = text.style.display === 'none' ? 'block' : 'none';
+  });
+  
+  passwordReals.forEach(real => {
+    real.style.display = real.style.display === 'none' ? 'block' : 'none';
+  });
 }
 
 function clearForm() {
