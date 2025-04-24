@@ -1,4 +1,19 @@
 
+// Card interaction
+function showInfo(cardType) {
+  const detailsId = `${cardType}-details`;
+  const details = document.getElementById(detailsId);
+  const allDetails = document.querySelectorAll('.card-details');
+  
+  allDetails.forEach(detail => {
+    if (detail.id !== detailsId) {
+      detail.classList.remove('active');
+    }
+  });
+  
+  details.classList.toggle('active');
+}
+
 // Quiz questions
 const quizzes = {
   1: [

@@ -26,17 +26,41 @@
     <section class="golpes-section">
       <h2>Como os Golpes Acontecem?</h2>
       <div class="golpes-cards">
-        <div class="card">
+        <div class="card" onclick="showInfo('senhas')">
           <h3>🔒 Senhas Fracas</h3>
           <p>Aprenda a criar senhas fortes e seguras</p>
+          <div class="card-details" id="senhas-details">
+            <ul>
+              <li>Use pelo menos 8 caracteres</li>
+              <li>Combine letras, números e símbolos</li>
+              <li>Evite informações pessoais</li>
+              <li>Use senhas diferentes para cada serviço</li>
+            </ul>
+          </div>
         </div>
-        <div class="card">
+        <div class="card" onclick="showInfo('whatsapp')">
           <h3>📱 WhatsApp</h3>
           <p>Evite golpes em aplicativos de mensagem</p>
+          <div class="card-details" id="whatsapp-details">
+            <ul>
+              <li>Não compartilhe códigos de verificação</li>
+              <li>Desconfie de mensagens pedindo dinheiro</li>
+              <li>Ative verificação em duas etapas</li>
+              <li>Não clique em links suspeitos</li>
+            </ul>
+          </div>
         </div>
-        <div class="card">
+        <div class="card" onclick="showInfo('banco')">
           <h3>💳 Banco Digital</h3>
           <p>Proteja suas informações bancárias</p>
+          <div class="card-details" id="banco-details">
+            <ul>
+              <li>Nunca compartilhe senhas</li>
+              <li>Use apenas o app oficial do banco</li>
+              <li>Não faça transferências sob pressão</li>
+              <li>Desconfie de promoções muito vantajosas</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>

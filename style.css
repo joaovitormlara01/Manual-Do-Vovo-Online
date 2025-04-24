@@ -57,6 +57,34 @@ main {
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card-details {
+  display: none;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.card-details.active {
+  display: block;
+}
+
+.card-details ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.card-details li {
+  margin: 0.5rem 0;
+  color: #666;
 }
 
 .quiz-section {
