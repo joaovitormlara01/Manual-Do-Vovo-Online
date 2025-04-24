@@ -68,12 +68,13 @@ function updatePasswordList() {
   const passwordList = document.getElementById('passwordList');
   if (!passwordList) return;
   
-  passwordList.innerHTML = passwords.map(p => `
+  passwordList.innerHTML = passwords.map((p, index) => `
     <div class="password-item">
       <h3>${p.siteName}</h3>
       <p>Usuário: ${p.username}</p>
       <p class="password-text">Senha: ${'*'.repeat(p.password.length)}</p>
       <p class="password-real" style="display: none">Senha: ${p.password}</p>
+      <button onclick="deletePassword(${index})" class="delete-btn">Excluir Senha</button>
     </div>
   `).join('');
 }
@@ -95,6 +96,19 @@ function clearForm() {
   document.getElementById('siteName').value = '';
   document.getElementById('username').value = '';
   document.getElementById('password').value = '';
+}
+
+function deletePassword(index) {
+  const passwords = JSON.parse(localStorage.getItem('passwords') || '[]');
+  passwords.splice(index, 1);
+  localStorage.setItem('passwords', JSON.stringify(passwords));
+  updatePasswordList();
+}
+
+function logout() {
+  localStorage.removeItem('isLoggedIn');
+  localStorage.removeItem('userEmail');
+  window.location.href = 'index.html';
 }
 
 function call(number) {
