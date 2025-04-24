@@ -209,8 +209,93 @@ footer {
   cursor: pointer;
 }
 
+/* Estilos para navegação */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.nav-links a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+/* Estilos para página de quizzes */
+.quiz-page {
+  padding: 2rem;
+}
+
+.quiz-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.quiz-item {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+/* Estilos para página de notícias */
+.noticias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.noticia-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.noticia-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.data {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.leia-mais {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
 @media (max-width: 600px) {
-  .golpes-cards {
+  .golpes-cards, .quiz-list, .noticias-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .nav-links {
+    gap: 1rem;
+  }
+  
+  .nav-links a {
+    font-size: 1rem;
+    padding: 0.3rem 0.8rem;
   }
 }
