@@ -203,9 +203,6 @@ function closeVideo() {
 }
 
 // Emergency button
-document.getElementById('emergencyButton').addEventListener('click', function() {
-  alert('Contatos de Emergência:\n\n' +
-        'Polícia: 190\n' +
-        'Delegacia Virtual: www.delegaciavirtual.gov.br\n' +
-        'Central de Atendimento ao Idoso: 0800-555-0123');
+document.getElementById('emergencyButton')?.addEventListener('click', function() {
+  window.location.href = 'emergencia.html';
 });
