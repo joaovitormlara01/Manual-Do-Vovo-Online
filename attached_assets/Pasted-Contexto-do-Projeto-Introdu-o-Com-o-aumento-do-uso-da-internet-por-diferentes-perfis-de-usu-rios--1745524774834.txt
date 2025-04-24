@@ -1,0 +1,38 @@
+Contexto do Projeto
+Introdução
+Com o aumento do uso da internet por diferentes perfis de usuários, especialmente durante e após a pandemia, surgiram novos desafios relacionados à segurança digital. Muitos usuários, principalmente idosos e pessoas com pouca instrução digital, encontram dificuldades em navegar com segurança, sendo alvos fáceis de golpes e fraudes online.
+Problema
+Usuários com baixa familiaridade digital enfrentam insegurança ao utilizar plataformas online, não sabem identificar ameaças, proteger seus dados ou criar senhas seguras, tornando-se vulneráveis a crimes virtuais.
+Objetivo do Projeto
+Desenvolver uma solução digital acessível e educativa que ensine práticas básicas de segurança online, capacite o usuário a reconhecer ameaças virtuais e permita o armazenamento seguro de informações sensíveis, como senhas.
+Justificativa
+A inclusão digital é um passo importante, mas não basta ensinar o uso de dispositivos é preciso garantir que esse uso ocorra de forma segura. Proteger os mais vulneráveis, como idosos e pessoas de baixa renda, é uma questão de cidadania digital. Esse projeto busca promover o acesso seguro à tecnologia para todos.
+Público-alvo
+•	Idosos com pouco conhecimento em tecnologia
+•	Trabalhadores informais com baixa instrução digital
+•	Pessoas com dificuldade de acesso a recursos de segurança online
+
+Especificação do Projeto
+Histórias de Usuários
+1.	Eu como idoso com pouca experiência digital, quero aprender a identificar golpes, para usar a internet com mais segurança.
+2.	Eu como trabalhador com baixa renda, quero entender como proteger meus dados, para evitar cair em promessas falsas.
+3.	Eu como usuário com pouca experiência digital, quero uma forma fácil e segura de armazenar minhas senhas, para proteger minhas contas.
+Requisitos Funcionais
+•	O sistema deve apresentar dicas de segurança de forma simples e visual.
+•	O sistema deve permitir salvar e recuperar senhas com autenticação segura.
+•	O sistema deve oferecer conhecimento sobre golpes mais comuns.
+•	O sistema deve permitir que o usuário teste seu conhecimento por meio de quiz.
+Requisitos Não Funcionais
+•	O sistema deve estar disponível 24/7.
+•	A aplicação deve ser responsiva para dispositivos móveis.
+•	O sistema deve ser leve, acessível e de fácil navegação.
+•	Deve ser publicado em uma plataforma pública
+•	O sistema deverá seguir princípios de acessibilidade para idosos.
+
+Projeto de Interface
+Fluxo do Usuário
+1.	Acesso à tela inicial →
+2.	Visualização dos conteúdos → 
+3.	Escolha entre se cadastrar ou continuar lendo os conteúdos →
+4.	Quizes para testar o conhecimento →
+5.	Retorno a home
